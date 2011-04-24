@@ -83,10 +83,10 @@ WPA_SUPPLICANT_VERSION := VER_0_6_X
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
 BOARD_WLAN_DEVICE := bcm4329
 WIFI_DRIVER_MODULE_PATH     := "/system/modules/dhd.ko"
-WIFI_DRIVER_FW_STA_PATH     := "/vendor/firmware/fw_bcm4329.bin"
-WIFI_DRIVER_FW_AP_PATH      := "/vendor/firmware/fw_bcm4329_apsta.bin"
-WIFI_DRIVER_MODULE_NAME     :=  "bcm4329_wlan"
-WIFI_DRIVER_MODULE_ARG      :=  "firmware_path=/vendor/firmware/fw_bcm4329.bin nvram_path=/vendor/firmware/nvram_net.txt"
+WIFI_DRIVER_FW_STA_PATH     := "/vendor/firmware/fw_bcm4329_sta.bin"
+WIFI_DRIVER_FW_AP_PATH      := "/vendor/firmware/fw_bcm4329_aps.bin"
+WIFI_DRIVER_MODULE_NAME     :=  "dhd"
+WIFI_DRIVER_MODULE_ARG      :=  "firmware_path=/vendor/firmware/fw_bcm4329_sta.bin nvram_path=/vendor/firmware/nvram_net.txt"
 
 # Vold
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR := true
