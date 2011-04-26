@@ -138,8 +138,9 @@ on post-fs
     # symlink /data/data to /datadata for performance
     symlink /datadata /data/data
 
-
 # wpa_supplicant socket (unix socket mode) 
+    mkdir /data/system 0777 system system
+    chmod 0777 /data/system
     mkdir /data/system/wpa_supplicant 0771 wifi wifi 
     chmod 0771 /data/system/wpa_supplicant 
     chown wifi wifi /data/system/wpa_supplicant 

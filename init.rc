@@ -23,11 +23,10 @@ loglevel 9
     export SD_EXT_DIRECTORY /sd-ext
     export BOOTCLASSPATH /system/framework/core.jar:/system/framework/bouncycastle.jar:/system/framework/ext.jar:/system/framework/framework.jar:/system/framework/android.policy.jar:/system/framework/services.jar:/system/framework/core-junit.jar:/system/framework/com.htc.commonctrl.jar:/system/framework/com.htc.framework.jar:/system/framework/com.htc.android.pimlib.jar:/system/framework/com.htc.android.easopen.jar:/system/framework/com.scalado.util.ScaladoUtil.jar:/system/framework/com.orange.authentication.simcard.jar
 
-
-
 # Right now vendor lives on the same filesystem as system,
 # but someday that may change.
     symlink /system/vendor /vendor
+
 
 # create mountpoints
     mkdir /mnt 0775 root system
